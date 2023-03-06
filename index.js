@@ -8,6 +8,9 @@ app.post("/api/wh",(req,res)=>{
     res.status(200).json({});
 })
 
+app.get("/",(req , res)=>{
+    res.send("welcome")
+})
 app.listen(3001,()=>{
     console.log("listen");
 })
