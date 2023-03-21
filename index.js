@@ -4,7 +4,7 @@ const cors = require("cors")
 app.use(cors());
 
 app.post("/api/wh",(req,res)=>{
-    console.log("ok")
+    console.log(req.body)
     res.status(200).json({id : req.body});
 })
 
