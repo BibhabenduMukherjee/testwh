@@ -5,7 +5,7 @@ app.use(cors());
 
 app.post("/api/wh",(req,res)=>{
     console.log("ok")
-    res.status(200).json({id : req.body._id});
+    res.status(200).json({id : req.body});
 })
 
 app.get("/",(req , res)=>{
