@@ -5,7 +5,7 @@ app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.post("/api/wh",(req,res)=>{
-    console.log(req.body)
+    console.log(req.body._id)
     res.status(200).json({id : req.body});
 })
 
